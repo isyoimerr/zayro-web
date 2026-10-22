@@ -13,17 +13,16 @@
   </a>
 </p>
 
-Landing page comercial para la marca ZAYRO, creada por <strong>@isyoimerr</strong> como una presentación visual premium de perfumes, moda y accesorios con foco en Instagram como canal principal de atención.
+Landing page comercial para la marca ZAYRO, diseñada para presentar perfumes, moda y accesorios con una identidad visual premium y una experiencia enfocada en Instagram como canal principal de atención.
 
-## 🔗 Links
+## 🔗 Enlaces
 
 - Tienda / demo: https://zayro-web.vercel.app/
 - Instagram: https://www.instagram.com/zayro_lifestyle/
-- Perfil del creador: https://github.com/isyoimerr
 
-## 🧩 ¿Qué es este proyecto?
+## 🧩 Descripción del proyecto
 
-Este proyecto es una landing page para exhibir la identidad visual de ZAYRO, mostrar colecciones, perfumes y accesorios, y guiar la atención comercial directamente a Instagram. La experiencia está pensada para ser clara, móvil, elegante y fácil de navegar desde celular.
+Este proyecto presenta una estrategia de marca enfocada en conversión visual, posicionamiento premium y atención directa a través de Instagram. La experiencia está pensada para ser clara, elegante y altamente usable desde móvil, con una narrativa visual que refuerza la identidad de ZAYRO.
 
 ## ✨ Stack
 
@@ -41,29 +40,29 @@ Este proyecto es una landing page para exhibir la identidad visual de ZAYRO, mos
 - `products.js` — datos de productos
 - `terminos.html` — términos
 - `privacidad.html` — política de privacidad
-- `assets/` — imágenes y material visual de la marca
+- `assets/` — imágenes y recursos del proyecto
 
-## 📸 Capturas del proyecto
+## 📸 Presentación visual
 
 <p align="center">
-  <img src="assets/coleccion-1/IMAGENES-INDIVIDUAL/MUJER-TOMA-1.png" alt="ZAYRO collage 1" width="420" />
-  <img src="assets/coleccion-1/IMAGENES-INDIVIDUAL/MUJER-TOMA-2-.png" alt="ZAYRO collage 2" width="420" />
+  <img src="assets/coleccion-1/IMAGENES-INDIVIDUAL/MUJER-TOMA-1.png" alt="ZAYRO visual 1" width="420" />
+  <img src="assets/coleccion-1/IMAGENES-INDIVIDUAL/TOMA-1-HOMBRE.png" alt="ZAYRO visual 2" width="420" />
 </p>
 
 <p align="center">
-  <img src="assets/coleccion-1/IMAGENES-INDIVIDUAL/TOMA-1-HOMBRE.png" alt="ZAYRO hombre 1" width="420" />
-  <img src="assets/coleccion-1/IMAGENES-INDIVIDUAL/TOMA-2-HOMBRE.png" alt="ZAYRO hombre 2" width="420" />
+  <img src="assets/coleccion-1/IMAGENES-INDIVIDUAL/MUJER-TOMA-2-.png" alt="ZAYRO visual 3" width="420" />
+  <img src="assets/coleccion-1/IMAGENES-INDIVIDUAL/TOMA-2-HOMBRE.png" alt="ZAYRO visual 4" width="420" />
 </p>
 
-## 🎯 Objetivos del proyecto
+## 🎯 Objetivos
 
 - Presentar la identidad visual de la marca.
 - Mostrar perfumes, wear y accesorios.
-- Mantener la venta/asesoría enfocada en Instagram.
-- Diseñar una experiencia premium y móvil.
-- Dejar una página clara, visualmente atractiva y lista para exhibición comercial.
+- Mantener la atención comercial enfocada en Instagram.
+- Diseñar una experiencia premium y adaptable a móvil.
+- Crear una landing page clara, visualmente sólida y lista para exhibición comercial.
 
-## 🚀 Cómo correrlo localmente
+## 🚀 Desarrollo local
 
 ```bash
 python -m http.server 8000
@@ -75,8 +74,6 @@ Luego abre:
 http://localhost:8000
 ```
 
-## 📝 Nota del autor
+## 🧾 Nota
 
-Este proyecto fue desarrollado para representar la marca ZAYRO como una propuesta visual comercial y de marca personal, con atención directa en Instagram y una presentación moderna para exhibición digital.
-
-Desarrollado por @isyoimerr.
+Proyecto desarrollado como landing page comercial para la marca ZAYRO, con enfoque en presentación visual premium, atención directa y experiencia móvil optimizada.
