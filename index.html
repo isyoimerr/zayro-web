@@ -27,157 +27,9 @@
         <a href="#inspiracion">DISEÑO EXCLUSIVO</a>
         <a href="#featured">COLECCIÓN</a>
         <a href="#accesorios">ACCESORIOS</a>
-        <a class="nav-cta" href="https://api.whatsapp.com/send/?phone=573016731498&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noreferrer">Escríbenos</a>
+        <a class="nav-cta" href="https://www.instagram.com/zayro_lifestyle/" target="_blank" rel="noreferrer">Instagram</a>
       </nav>
     </header>
-
-    <div class="cart-sidebar" id="cart-sidebar" aria-label="Carrito de compras">
-      <div class="cart-header">
-        <h2>Tu carrito</h2>
-        <button class="cart-close" id="cart-close" aria-label="Cerrar carrito">×</button>
-      </div>
-      <div class="cart-body">
-        <div class="cart-total cart-total--top">
-          <span>Subtotal</span>
-          <strong id="cart-subtotal-top">—</strong>
-        </div>
-        <section class="cart-items" id="cart-items">
-          <p class="cart-empty">El carrito está vacío.</p>
-        </section>
-
-        <button class="button button--ghost" id="cart-continue-shopping-btn">Seguir comprando</button>
-      </div>
-      <div class="cart-footer">
-        <div class="cart-promo">
-          <strong>Tu pedido se gestiona en minutos</strong>
-          <p>Asesoría rápida, seguimiento claro y envío nacional.</p>
-        </div>
-        <button class="button button--primary" id="cart-pay-button" type="button">Pagar con Nequi / Bre-B</button>
-        <button class="button button--ghost" id="cart-confirm-btn" aria-label="Enviar pedido por WhatsApp">Enviar pedido por WhatsApp</button>
-      </div>
-    </div>
-
-    <div class="checkout-modal" id="checkout-modal" aria-hidden="true">
-      <div class="checkout-modal__backdrop" data-close-checkout-modal="true"></div>
-      <div class="checkout-modal__panel" role="dialog" aria-modal="true" aria-labelledby="checkout-modal-title" tabindex="-1">
-        <button class="checkout-modal__close" id="checkout-modal-close" aria-label="Cerrar">×</button>
-        <div class="checkout-modal__content">
-          <p class="eyebrow eyebrow--dark">FINALIZAR PEDIDO</p>
-          <h3 id="checkout-modal-title">¿Quieres dejar tus datos para la asesoría?</h3>
-          <p class="checkout-modal__copy">Solo necesitas tu nombre y ciudad. Si prefieres, ciérralo y continúa sin completar nada.</p>
-          <form class="checkout-modal__form" id="checkout-modal-form">
-            <label class="checkout-field">
-              <span>Nombre</span>
-              <input type="text" id="checkout-modal-name" name="name" placeholder="Tu nombre" />
-            </label>
-            <label class="checkout-field">
-              <span>¿De dónde eres / dónde resides?</span>
-              <input type="text" id="checkout-modal-city" name="city" placeholder="Ciudad o región" />
-            </label>
-            <label class="checkout-field">
-              <span>Correo electrónico (opcional)</span>
-              <input type="email" id="checkout-modal-email" name="email" placeholder="tu@correo.com" />
-            </label>
-            <p class="checkout-form__message" id="checkout-form-message" role="status" aria-live="polite"></p>
-            <div class="checkout-modal__actions">
-              <button class="button button--ghost" id="checkout-skip-btn" type="button">Cerrar</button>
-              <button class="button button--primary" id="checkout-send-btn" type="submit">Enviar por WhatsApp</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <div class="payment-gateway-modal" id="payment-gateway-modal" aria-hidden="true">
-      <div class="payment-gateway-modal__backdrop" data-close-payment-modal="true"></div>
-      <div class="payment-gateway-modal__panel" role="dialog" aria-modal="true" aria-labelledby="payment-gateway-title" tabindex="-1">
-        <button class="payment-gateway-modal__close" id="payment-gateway-close" aria-label="Cerrar">×</button>
-
-        <div class="payment-gateway-header">
-          <h2 id="payment-gateway-title">Pagar pedido</h2>
-          <p class="payment-gateway-subtitle">Completa tus datos, elige el método de pago y confirma el pedido por WhatsApp.</p>
-        </div>
-
-        <div class="payment-gateway-body" id="payment-flow">
-          <div class="payment-customer-fields">
-            <label class="checkout-field">
-              <span>Nombre</span>
-              <input type="text" id="payment-customer-name" name="payment-name" placeholder="Tu nombre" />
-            </label>
-            <label class="checkout-field">
-              <span>Ciudad</span>
-              <input type="text" id="payment-customer-city" name="payment-city" placeholder="Ciudad o región" />
-            </label>
-          </div>
-
-          <div class="cart-payment-methods" role="radiogroup" aria-label="Metodos de pago">
-            <label class="payment-method-option">
-              <input type="radio" name="payment-method" value="nequi" checked />
-              <span>Nequi</span>
-            </label>
-            <label class="payment-method-option">
-              <input type="radio" name="payment-method" value="breb" />
-              <span>Bre-B</span>
-            </label>
-
-          </div>
-
-          <div class="cart-payment-preview" id="cart-payment-preview">
-            <p class="cart-payment-preview__title">Pago por Nequi</p>
-            <p><strong>Monto exacto:</strong> <span id="payment-amount-preview">—</span></p>
-            <p><strong>Cuenta:</strong> <span id="payment-account-preview">3016731498</span></p>
-            <div class="cart-payment-qr">
-              <img src="assets/QR/QR.png" alt="Codigo QR para pago" loading="lazy" />
-            </div>
-          </div>
-
-          <label class="payment-terms">
-            <input type="checkbox" id="payment-terms" />
-            <span>Acepto los terminos y entiendo que el pedido se confirma una vez verifiquemos el pago.</span>
-          </label>
-
-          <button class="button button--primary" id="payment-submit-btn" type="button">Confirmar y enviar por WhatsApp</button>
-          <p class="cart-payment-message" id="cart-payment-message" role="status" aria-live="polite"></p>
-        </div>
-
-        <div class="payment-gateway-actions">
-          <button class="button button--ghost" data-close-payment-modal="true">Cancelar</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="payment-gateway-modal" id="payment-confirm-modal" aria-hidden="true">
-      <div class="payment-gateway-modal__backdrop" data-close-payment-modal="true"></div>
-      <div class="payment-gateway-modal__panel" role="dialog" aria-modal="true" aria-labelledby="payment-confirm-title" tabindex="-1">
-        <button class="payment-gateway-modal__close" id="payment-confirm-close" aria-label="Cerrar">×</button>
-        <div class="payment-gateway-header">
-          <h2 id="payment-confirm-title">Solicitud enviada</h2>
-          <p class="payment-gateway-subtitle">Hemos recibido tu solicitud de pago y te contactaremos pronto para confirmar.</p>
-        </div>
-        <div class="payment-gateway-body">
-          <div class="payment-receipt">
-            <div class="receipt-item">
-              <span>Método de pago</span>
-              <strong id="payment-method-receipt">—</strong>
-            </div>
-            <div class="receipt-item">
-              <span>Monto</span>
-              <strong id="payment-amount-receipt">—</strong>
-            </div>
-            <div class="receipt-item receipt-item--separator">
-              <span>Estado</span>
-              <strong>Pendiente de verificación</strong>
-            </div>
-          </div>
-          <div class="receipt-message">
-            <p>El pedido se confirma una vez que verifiquemos el pago. Te enviaremos un mensaje por WhatsApp con la confirmación y los pasos a seguir.</p>
-          </div>
-        </div>
-        <div class="payment-gateway-actions">
-          <button class="button button--primary" id="payment-confirm-close-btn" type="button">Cerrar</button>
-        </div>
-      </div>
-    </div>
 
     <main>
       <!-- HERO -->
@@ -395,7 +247,7 @@
         <div class="section__heading reveal">
           <p class="eyebrow">DISEÑO EXCLUSIVO</p>
           <h2>Elige tu referencia</h2>
-          <p>Selecciona un ejemplo, sube lo que quieras mandar a hacer y elige el frasco antes de enviarlo por WhatsApp.</p>
+          <p>Selecciona un ejemplo, sube lo que quieras mandar a hacer y elige el frasco antes de coordinarlo por Instagram.</p>
         </div>
         <div class="inspiracion-landing-hook reveal">
           <div class="inspiracion-landing-grid" id="inspiracion-landing-grid"></div>
@@ -409,14 +261,14 @@
             <button class="modal-close" id="modal-inspiracion-close" aria-label="Cerrar">&times;</button>
             <div class="inspiracion-step" id="step-detalle" data-step="1">
               <h3>Si no viste en el catálogo, mándanos tu inspiración</h3>
-              <p class="step-description">Elige aroma, escribe lo que deseas y luego ajusta frasco y precio. Si tienes una imagen, puedes enviarla por WhatsApp después de seleccionar tu frasco.</p>
+              <p class="step-description">Elige aroma, escribe lo que deseas y luego ajusta frasco y precio. Si tienes una imagen, puedes enviarla por Instagram después de seleccionar tu frasco.</p>
               <div class="aroma-grid" id="inspiracion-aroma-grid"></div>
               <label for="inspiracion-text" style="display: block; margin-top: 1.5rem; font-weight: 700; letter-spacing: 0.03em;">Tu inspiración (opcional)</label>
               <input list="inspiracion-presets" type="text" id="inspiracion-text" placeholder="Ej. cítrico, dulce, floral, amaderado..." style="width: 100%; padding: 0.9rem; border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; background: rgba(255,255,255,0.06); color: white; font-size: 1rem;" />
               <datalist id="inspiracion-presets"></datalist>
-              <p style="margin:1rem 0 0;color:var(--zayro-mist);font-size:0.9rem;">¿Tienes imagen? Envíala por WhatsApp una vez elijas el frasco.</p>
+              <p style="margin:1rem 0 0;color:var(--zayro-mist);font-size:0.9rem;">¿Tienes imagen? Envíala por Instagram una vez elijas el frasco.</p>
               <label for="inspiracion-size" style="display: block; margin-top: 1.5rem; font-weight: 700; letter-spacing: 0.03em;">Tamaño (opcional)</label>
-              <input type="text" id="inspiracion-size" placeholder="Ej. 50 ml, 100 ml — lo afinamos por WhatsApp" style="width: 100%; padding: 0.9rem; border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; background: rgba(255,255,255,0.06); color: white; font-size: 1rem; margin-top: 0.75rem;" />
+              <input type="text" id="inspiracion-size" placeholder="Ej. 50 ml, 100 ml — lo afinamos por Instagram" style="width: 100%; padding: 0.9rem; border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; background: rgba(255,255,255,0.06); color: white; font-size: 1rem; margin-top: 0.75rem;" />
               <div class="modal-actions" style="margin-top: 1.5rem; display:flex; justify-content:flex-end; gap:0.75rem;">
                 <button class="button button--ghost" type="button" onclick="closeInspirationModal()">Cancelar</button>
                 <button class="button button--primary" type="button" id="btn-detalle-next">Siguiente</button>
@@ -434,7 +286,7 @@
             </div>
 
             <div class="inspiracion-step" id="step-confirmacion" data-step="3" style="display:none;">
-              <h3>Envíalo por WhatsApp</h3>
+              <h3>Coordínalo por Instagram</h3>
               <div class="resumen-inspiracion">
                 <div class="resumen-item"><strong>Frasco</strong><span id="resumen-frasco">-</span></div>
                 <div class="resumen-item"><strong>Precio</strong><span id="resumen-precio">-</span></div>
@@ -443,7 +295,7 @@
                 <button class="button button--ghost" type="button" id="btn-back-confirmacion">← Volver</button>
                 <button class="button button--primary" type="button" id="btn-add-inspiracion-cart">Agregar al carrito</button>
               </div>
-              <button class="button button--primary button--large" type="button" id="btn-send-inspiracion" style="width: 100%; margin-top: 1rem;">Enviar por WhatsApp</button>
+              <button class="button button--primary button--large" type="button" id="btn-send-inspiracion" style="width: 100%; margin-top: 1rem;">Enviar por Instagram</button>
             </div>
           </div>
         </div>
@@ -482,25 +334,10 @@
             <div class="accessories-image" style="background-image: url('assets/acesorios/todo.png');"></div>
           </div>
           <div class="accessories-copy">
-            <p>Gorras, joyería, gafas, cintillos, bolsos y termos. Confirma stock por WhatsApp.</p>
+            <p>Gorras, joyería, gafas, cintillos, bolsos y termos. Consulta disponibilidad por Instagram.</p>
             <div class="accessories-actions">
-              <a class="button button--primary" href="https://api.whatsapp.com/send/?phone=573016731498&text=Hola%20quiero%20preguntar%20disponibilidad%20de%20accesorios" target="_blank" rel="noreferrer">Preguntar disponibilidad</a>
+              <a class="button button--primary" href="https://www.instagram.com/zayro_lifestyle/" target="_blank" rel="noreferrer">Preguntar disponibilidad</a>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PAGOS Y ENVÍOS -->
-      <section class="section section--dark" id="shipping">
-        <div class="section__heading reveal">
-          <p class="eyebrow">PAGOS · ENVÍOS</p>
-          <h2>Envíos seguros y entrega a domicilio.</h2>
-        </div>
-        <div class="payment-wrap reveal">
-          <div class="shipping-copy">
-            <p class="shipping-subtitle">Envíos seguros</p>
-            <p>Empacamos cada pedido con cuidado premium y enviamos a domicilio en toda Colombia. Desde nuestra bodega en Sabanalarga, Atlántico, tus paquetes viajan con seguimiento y protección hasta tu puerta.</p>
-            <p>Sin importar dónde estés en Colombia, te entregamos directamente a tu casa con el servicio más confiable.</p>
           </div>
         </div>
       </section>
@@ -522,7 +359,7 @@
           </article>
           <article class="faq-item reveal">
             <button class="faq-question" aria-expanded="false">¿Cómo solicito una inspiración personalizada?<span>+</span></button>
-            <div class="faq-answer"><p>Selecciona el aroma de tu preferencia, elige el envase y la cantidad desde nuestra sección de inspiración personalizada. Una vez configurado, puedes agregarlo a tu carrito o consultar con un asesor por WhatsApp.</p></div>
+            <div class="faq-answer"><p>Selecciona el aroma de tu preferencia, elige el envase y la cantidad desde nuestra sección de inspiración personalizada. Una vez configurado, puedes agregarlo a tu carrito o consultar con un asesor por Instagram.</p></div>
           </article>
           <article class="faq-item reveal">
             <button class="faq-question" aria-expanded="false">¿Realizan envíos a toda Colombia?<span>+</span></button>
@@ -534,15 +371,15 @@
           </article>
           <article class="faq-item reveal">
             <button class="faq-question" aria-expanded="false">¿Puedo recibir asesoría antes de comprar?<span>+</span></button>
-            <div class="faq-answer"><p>Por supuesto. Puedes escribirnos directamente por WhatsApp o usar nuestro chat en línea. Un asesor te atenderá de forma personalizada para ayudarte a encontrar la mejor opción según tus gustos y necesidades.</p></div>
+            <div class="faq-answer"><p>Por supuesto. Puedes escribirnos directamente por Instagram o usar nuestro chat en línea. Un asesor te atenderá de forma personalizada para ayudarte a encontrar la mejor opción según tus gustos y necesidades.</p></div>
           </article>
           <article class="faq-item reveal">
-            <button class="faq-question" aria-expanded="false">¿Qué métodos de pago aceptan?<span>+</span></button>
-            <div class="faq-answer"><p>Aceptamos Nequi, Llaves y coordinación directa por WhatsApp. Una vez confirmado tu pedido, te enviaremos los datos para realizar la transferencia.</p></div>
+            <button class="faq-question" aria-expanded="false">¿Cómo consulto disponibilidad?<span>+</span></button>
+            <div class="faq-answer"><p>Escribe por Instagram y te respondemos con la disponibilidad, el estilo y la recomendación más adecuada para ti.</p></div>
           </article>
           <article class="faq-item reveal">
             <button class="faq-question" aria-expanded="false">¿Puedo personalizar un envase?<span>+</span></button>
-            <div class="faq-answer"><p>Sí, ofrecemos personalización de envases para inspirations y prendas seleccionadas bajo pedido. Consulta con nuestro equipo por WhatsApp para conocer las opciones disponibles.</p></div>
+            <div class="faq-answer"><p>Sí, ofrecemos personalización de envases para inspirations y prendas seleccionadas bajo pedido. Consulta con nuestro equipo por Instagram para conocer las opciones disponibles.</p></div>
           </article>
           <article class="faq-item reveal">
             <button class="faq-question" aria-expanded="false">¿Cómo hago seguimiento a mi pedido?<span>+</span></button>
@@ -550,7 +387,7 @@
           </article>
           <article class="faq-item reveal">
             <button class="faq-question" aria-expanded="false">¿Qué pasa si no encuentro la fragancia que busco?<span>+</span></button>
-            <div class="faq-answer"><p>Si no encuentras la fragancia que deseas en nuestro catálogo, puedes solicitar una inspiración personalizada o escribirnos por WhatsApp. Trabajamos con una amplia variedad de esencias y podemos evaluar tu solicitud.</p></div>
+            <div class="faq-answer"><p>Si no encuentras la fragancia que deseas en nuestro catálogo, puedes solicitar una inspiración personalizada o escribirnos por Instagram. Trabajamos con una amplia variedad de esencias y podemos evaluar tu solicitud.</p></div>
           </article>
         </div>
         <div class="faq-actions reveal">
@@ -565,10 +402,9 @@
         <div class="cta-card reveal">
           <p class="eyebrow">CONTACTO</p>
           <h2>Encuentra tu esencia.</h2>
-          <p>Escríbenos para recibir asesoría.</p>
+          <p>Escríbenos por Instagram para recibir asesoría.</p>
           <div class="hero__actions">
-            <a class="button button--primary" href="https://api.whatsapp.com/send/?phone=573016731498&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noreferrer">WhatsApp</a>
-            <a class="button button--ghost" href="https://www.instagram.com/zayro_lifestyle/" target="_blank" rel="noreferrer">Instagram</a>
+            <a class="button button--primary" href="https://www.instagram.com/zayro_lifestyle/" target="_blank" rel="noreferrer">Instagram</a>
           </div>
         </div>
       </section>
@@ -587,7 +423,6 @@
       </div>
       <div>
         <h4>Contacto</h4>
-        <a href="https://api.whatsapp.com/send/?phone=573016731498&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noreferrer">WhatsApp</a>
         <a href="https://www.instagram.com/zayro_lifestyle/" target="_blank" rel="noreferrer">Instagram</a>
       </div>
       <div>
@@ -635,13 +470,6 @@
     </section>
 
     <!-- Floating buttons -->
-    <button class="floating-social floating-cart-logo" id="floating-cart-toggle" aria-label="Abrir carrito">
-      <img src="assets/logo-sin-fondo/Carritos.png" alt="Carrito" />
-      <span class="cart-count floating-count" id="floating-cart-count">0</span>
-    </button>
-    <a class="floating-social floating-wa" href="https://api.whatsapp.com/send/?phone=573016731498" target="_blank" rel="noreferrer" aria-label="WhatsApp">
-      <img src="assets/logo-sin-fondo/whatsapp.png" alt="WhatsApp" />
-    </a>
     <a class="floating-social floating-ig" href="https://www.instagram.com/zayro_lifestyle/" target="_blank" rel="noreferrer" aria-label="Instagram">
       <img src="assets/logo-sin-fondo/instagram.png" alt="Instagram" />
     </a>

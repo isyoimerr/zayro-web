@@ -17,7 +17,7 @@ const chatFlow = {
       { label: "Ropa", next: "ropa" },
       { label: "Accesorios", next: "accesorios" },
       { label: "Inspiración personalizada", action: "inspiracion" },
-      { label: "Hablar con un asesor", action: "whatsapp" }
+      { label: "Hablar con un asesor", action: "instagram" }
     ]
   },
   perfumes: {
@@ -27,14 +27,14 @@ const chatFlow = {
       { label: "Inspiraciones", next: "inspiraciones" },
       { label: "Decants", next: "decants" },
       { label: "Ver catálogo", action: "catalogo" },
-      { label: "Hablar con un asesor", action: "whatsapp" }
+      { label: "Hablar con un asesor", action: "instagram" }
     ]
   },
   originales: {
     message: "Trabajamos con fragancias originales 100% auténticas. Contamos con marcas de diseñador y de nicho.\n\n¿Quieres ver nuestro catálogo o prefieres hablar con un asesor para recomendaciones personalizadas?",
     options: [
       { label: "Ver catálogo", action: "catalogo" },
-      { label: "Hablar con un asesor", action: "whatsapp" },
+      { label: "Hablar con un asesor", action: "instagram" },
       { label: "No resolvió mi duda", action: "no-resuelto" }
     ]
   },
@@ -44,7 +44,7 @@ const chatFlow = {
       { label: "Duración", next: "duracion" },
       { label: "Presentaciones", next: "presentaciones" },
       { label: "Ver catálogo", action: "catalogo" },
-      { label: "Hablar con un asesor", action: "whatsapp" },
+      { label: "Hablar con un asesor", action: "instagram" },
       { label: "No resolvió mi duda", action: "no-resuelto" }
     ]
   },
@@ -53,7 +53,7 @@ const chatFlow = {
     options: [
       { label: "Presentaciones", next: "presentaciones" },
       { label: "Ver catálogo", action: "catalogo" },
-      { label: "Hablar con un asesor", action: "whatsapp" },
+      { label: "Hablar con un asesor", action: "instagram" },
       { label: "No resolvió mi duda", action: "no-resuelto" }
     ]
   },
@@ -62,21 +62,21 @@ const chatFlow = {
     options: [
       { label: "Precios", next: "precios-inspiraciones" },
       { label: "Ver catálogo", action: "catalogo" },
-      { label: "Hablar con un asesor", action: "whatsapp" },
+      { label: "Hablar con un asesor", action: "instagram" },
       { label: "No resolvió mi duda", action: "no-resuelto" }
     ]
   },
   "precios-inspiraciones": {
-    message: "Los precios varían según el formato.\n\nPara darte una cotización exacta, escríbenos por WhatsApp y te atendemos al instante.",
+    message: "Los precios varían según el formato.\n\nPara darte una cotización exacta, escríbenos por Instagram y te atendemos al instante.",
     options: [
-      { label: "Hablar con un asesor", action: "whatsapp" },
+      { label: "Hablar con un asesor", action: "instagram" },
       { label: "No resolvió mi duda", action: "no-resuelto" }
     ]
   },
   decants: {
     message: "Los decants son una forma económica de probar varias fragancias antes de decidirte por un frasco completo.\n\nPregunta a nuestro asesor por los tamaños y precios disponibles.",
     options: [
-      { label: "Hablar con un asesor", action: "whatsapp" },
+      { label: "Hablar con un asesor", action: "instagram" },
       { label: "No resolvió mi duda", action: "no-resuelto" }
     ]
   },
@@ -86,14 +86,14 @@ const chatFlow = {
       { label: "Costo de envío", next: "costo-envio" },
       { label: "Tiempo de entrega", next: "tiempo-entrega" },
       { label: "Ver todo", next: "catalogo-general" },
-      { label: "Hablar con un asesor", action: "whatsapp" },
+      { label: "Hablar con un asesor", action: "instagram" },
       { label: "No resolvió mi duda", action: "no-resuelto" }
     ]
   },
   "costo-envio": {
-    message: "El costo de envío depende de tu ciudad y del peso del pedido.\n\nEscríbenos por WhatsApp con tu ubicación y te damos el valor exacto.",
+    message: "El costo de envío depende de tu ciudad y del peso del pedido.\n\nEscríbenos por Instagram con tu ubicación y te damos el valor exacto.",
     options: [
-      { label: "Hablar con un asesor", action: "whatsapp" },
+      { label: "Hablar con un asesor", action: "instagram" },
       { label: "No resolvió mi duda", action: "no-resuelto" }
     ]
   },
@@ -101,23 +101,22 @@ const chatFlow = {
     message: "Una vez confirmado el pedido, lo despachamos en las siguientes 24 horas.\n\nEl tiempo de tránsito es de 2 a 5 días hábiles según la ciudad.",
     options: [
       { label: "Costo de envío", next: "costo-envio" },
-      { label: "Hablar con un asesor", action: "whatsapp" },
+      { label: "Hablar con un asesor", action: "instagram" },
       { label: "No resolvió mi duda", action: "no-resuelto" }
     ]
   },
   pagos: {
-    message: "Aceptamos varios métodos de pago:\n\n• Nequi\n• Daviplata\n• Bancolombia\n• Efectivo (solo en puntos de encuentro)\n\nSi quieres, te envío la forma más fácil para tu compra.",
+    message: "Puedes consultar disponibilidad, precios y recomendaciones directamente por Instagram.\n\nLa atención comercial se realiza de forma personalizada y coordinada por el equipo de ZAYRO.",
     options: [
-      { label: "¿Cómo funciona?", next: "como-pagar" },
       { label: "Ver catálogo completo", next: "catalogo-general" },
-      { label: "Hablar con un asesor", action: "whatsapp" },
+      { label: "Hablar con un asesor", action: "instagram" },
       { label: "No resolvió mi duda", action: "no-resuelto" }
     ]
   },
   "como-pagar": {
-    message: "Es muy sencillo:\n\n1. Revisa los productos que te interesan\n2. Escríbenos por WhatsApp\n3. El asesor te envía los datos para transferir\n4. Confirmamos tu pago y despachamos",
+    message: "Es muy sencillo:\n\n1. Revisa los productos que te interesan\n2. Escribe al equipo por Instagram\n3. Te confirmamos disponibilidad y asesoría\n4. Coordinamos el pedido directamente con la marca",
     options: [
-      { label: "Hablar con un asesor", action: "whatsapp" },
+      { label: "Hablar con un asesor", action: "instagram" },
       { label: "No resolvió mi duda", action: "no-resuelto" }
     ]
   },
@@ -126,7 +125,7 @@ const chatFlow = {
     options: [
       { label: "Ver colección", action: "coleccion" },
       { label: "Preguntar por tallas", next: "tallas" },
-      { label: "Hablar con un asesor", action: "whatsapp" },
+      { label: "Hablar con un asesor", action: "instagram" },
       { label: "No resolvió mi duda", action: "no-resuelto" }
     ]
   },
@@ -134,7 +133,7 @@ const chatFlow = {
     message: "Trabajamos principalmente con cortes oversize y semi-oversize.\n\nSi prefieres algo más ajustado o una recomendación personalizada, te ayudo con el estilo y la talla adecuada.",
     options: [
       { label: "Ver colección", action: "coleccion" },
-      { label: "Hablar con un asesor", action: "whatsapp" },
+      { label: "Hablar con un asesor", action: "instagram" },
       { label: "No resolvió mi duda", action: "no-resuelto" }
     ]
   },
@@ -142,15 +141,15 @@ const chatFlow = {
     message: "También tenemos accesorios como gorras, joyería, gafas, cintillos, bolsos y termos.\n\nTodo pensado para completar tu look urbano con estilo.",
     options: [
       { label: "Ver accesorios", next: "accesorios-ver" },
-      { label: "Hablar con un asesor", action: "whatsapp" },
+      { label: "Hablar con un asesor", action: "instagram" },
       { label: "No resolvió mi duda", action: "no-resuelto" }
     ]
   },
   "accesorios-ver": {
-    message: "Puedes explorar nuestra sección de accesorios y consultar disponibilidad por WhatsApp.\n\n¿Quieres que te muestre los productos que tenemos ahora?",
+    message: "Puedes explorar nuestra sección de accesorios y consultar disponibilidad por Instagram.\n\n¿Quieres que te muestre los productos que tenemos ahora?",
     options: [
       { label: "Mostrar accesorios", action: "accesorios" },
-      { label: "Hablar con un asesor", action: "whatsapp" },
+      { label: "Hablar con un asesor", action: "instagram" },
       { label: "No resolvió mi duda", action: "no-resuelto" }
     ]
   },
@@ -160,7 +159,7 @@ const chatFlow = {
       { label: "Ir a perfumes", action: "catalogo" },
       { label: "Ir a ropa", action: "coleccion" },
       { label: "Ir a accesorios", action: "accesorios" },
-      { label: "Hablar con un asesor", action: "whatsapp" }
+      { label: "Hablar con un asesor", action: "instagram" }
     ]
   },
   inspiracion: {
@@ -168,7 +167,7 @@ const chatFlow = {
     options: [
       { label: "Quiero empezar", action: "empezar-inspiracion" },
       { label: "Ver envases", action: "ver-envases" },
-      { label: "Hablar con un asesor", action: "whatsapp" },
+      { label: "Hablar con un asesor", action: "instagram" },
       { label: "No resolvió mi duda", action: "no-resuelto" }
     ]
   }
@@ -220,7 +219,7 @@ function openProductDetail(productId) {
   currentProductSize = product.sizes && product.sizes.length ? product.sizes[0] : null;
   updateProductVariant();
   const isClothing = product.cuts && product.cuts.length && product.sizes && product.sizes.length;
-  document.getElementById('detail-hint').textContent = isClothing ? '2XL+ tiene costo adicional. Te asesoramos por WhatsApp. Métodos de pago en desarrollo.' : '';
+  document.getElementById('detail-hint').textContent = isClothing ? '2XL+ tiene costo adicional. Te asesoramos por Instagram.' : '';
   renderThumbnails(product);
   renderPresentations(product);
 
@@ -299,7 +298,7 @@ function updateProductVariant() {
     if (currentProductVariant && currentProductVariant.discount) {
       hintEl.textContent = `20% OFF aplicado automáticamente en Colección 01`;
     } else if (currentProductId && PRODUCTS[currentProductId] && PRODUCTS[currentProductId].cuts && PRODUCTS[currentProductId].sizes) {
-      hintEl.textContent = '2XL y 3XL tienen costo adicional. Te asesoramos por WhatsApp.';
+      hintEl.textContent = '2XL y 3XL tienen costo adicional. Te asesoramos por Instagram.';
     } else {
       hintEl.textContent = '';
     }
@@ -409,7 +408,10 @@ document.getElementById('detail-contact-wa')?.addEventListener('click', () => {
     const product = PRODUCTS[currentProductId];
     const variantInfo = currentProductVariant ? `, ${currentProductVariant.label}` : '';
     const msg = `Hola, estoy interesado en ${product.name}${variantInfo}. ¿Me das más información?`;
-    window.open(`https://api.whatsapp.com/send/?phone=573016731498&text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(INSTAGRAM_URL, '_blank');
+    if (product) {
+      console.info(`Consulta por Instagram: ${product.name}${variantInfo}`);
+    }
   }
 });
 
@@ -446,6 +448,7 @@ function initProductCards() {
 // ========== CART ==========
 const CART_STORAGE_KEY = 'zayro-cart';
 const WA_PHONE = '573016731498';
+const INSTAGRAM_URL = 'https://www.instagram.com/zayro_lifestyle/';
 const CUSTOMER_STORAGE_KEY = 'zayro-cart-customer';
 
 function formatCurrency(amount) { return '$' + amount.toLocaleString('es-CO'); }
@@ -715,7 +718,7 @@ function closeCheckoutModal() {
   modal.setAttribute('aria-hidden', 'true');
 }
 
-function buildWhatsappMessage() {
+function buildInstagramContactMessage() {
   const user = cartState.customer || getCheckoutFormData();
   const name = user.name || 'No indicado';
   const city = user.city || 'No indicado';
@@ -723,9 +726,8 @@ function buildWhatsappMessage() {
   const lines = [
     'Hola, equipo de ZAYRO. 👋',
     '',
-    'Quiero solicitar información sobre los siguientes productos:',
-    '',
-    '🛍️ Productos:'
+    'Quiero consultar por los siguientes productos:',
+    ''
   ];
   cartState.items.forEach(item => {
     const variantInfo = item.variant ? ` (${item.variant})` : '';
@@ -741,17 +743,16 @@ function buildWhatsappMessage() {
   return lines.join('\n');
 }
 
-function startWhatsappCheckout() {
+function startInstagramCheckout() {
   if (!cartState.hasItems()) { openCartSidebar(); return; }
-  openCheckoutModal();
+  window.open(INSTAGRAM_URL, '_blank');
 }
 
 function submitCheckoutModal(event) {
   event.preventDefault();
   const customer = getCheckoutFormData();
   cartState.setCustomerInfo(customer);
-  const url = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(buildWhatsappMessage())}`;
-  window.open(url, '_blank');
+  window.open(INSTAGRAM_URL, '_blank');
   closeCheckoutModal();
 }
 
@@ -771,23 +772,13 @@ function updateManualPaymentSummary() {
   const title = preview?.querySelector('.cart-payment-preview__title');
   const amount = document.getElementById('payment-amount-preview');
   const account = document.getElementById('payment-account-preview');
-  const selected = document.querySelector('input[name="payment-method"]:checked')?.value || 'nequi';
+  const selected = document.querySelector('input[name="payment-method"]:checked')?.value || 'instagram';
 
   if (!preview || !title || !amount || !account) return;
 
-  if (selected === 'nequi') {
-    title.textContent = 'Pago por Nequi';
-    amount.textContent = cartState.hasConsultItems() ? 'Consultar con asesor' : formatCurrency(cartState.getTotal());
-    account.textContent = '3016731498';
-  } else if (selected === 'breb') {
-    title.textContent = 'Pago por Bre-B';
-    amount.textContent = cartState.hasConsultItems() ? 'Consultar con asesor' : formatCurrency(cartState.getTotal());
-    account.textContent = '0092701119';
-  } else {
-    title.textContent = 'Pago por WhatsApp';
-    amount.textContent = cartState.hasConsultItems() ? 'Consultar con asesor' : formatCurrency(cartState.getTotal());
-    account.textContent = 'Asesoría directa';
-  }
+  title.textContent = 'Consulta por Instagram';
+  amount.textContent = cartState.hasConsultItems() ? 'Consultar con asesor' : formatCurrency(cartState.getTotal());
+  account.textContent = '@zayro_lifestyle';
 }
 
 function setManualPaymentMessage(message, isError = false) {
@@ -800,26 +791,21 @@ function setManualPaymentMessage(message, isError = false) {
 function buildManualPaymentMessage() {
   const name = cartState.customer?.name || 'No indicado';
   const city = cartState.customer?.city || 'No indicado';
-  const method = document.querySelector('input[name="payment-method"]:checked')?.value || 'nequi';
-  const methodLabel = method === 'nequi' ? 'Nequi' : (method === 'breb' ? 'Bre-B' : 'WhatsApp');
   const total = cartState.hasConsultItems() ? 'por confirmar' : formatCurrency(cartState.getTotal());
   const lines = [
     'Hola, equipo de ZAYRO.',
     '',
-    'Nuevo pago manual recibido.',
+    'Quiero asesoría y coordinación del pedido por Instagram.',
     '',
     'Pedido:',
     ...cartState.items.map(item => `- ${item.name} x${item.quantity}`),
     '',
-    'Metodo de pago:',
-    `- ${methodLabel}`,
-    `- Monto: ${total}`,
-    '',
     'Datos del cliente:',
     `- Nombre: ${name}`,
     `- Ciudad: ${city}`,
+    `- Monto estimado: ${total}`,
     '',
-    'En breve nos contactaremos para confirmar el pago y coordinar el envio. Gracias.'
+    'Gracias por la atención.'
   ];
 
   return lines.join('\n');
@@ -841,6 +827,7 @@ function openPaymentModal() {
   document.getElementById('payment-terms').checked = false;
   setManualPaymentMessage('');
   updateManualPaymentSummary();
+  window.open(INSTAGRAM_URL, '_blank');
   modal.classList.add('is-open');
   modal.setAttribute('aria-hidden', 'false');
 }
@@ -869,16 +856,13 @@ function handleManualPaymentSubmit() {
   }
 
   const message = buildManualPaymentMessage();
-  const url = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(message)}`;
-  window.open(url, '_blank');
+  window.open(INSTAGRAM_URL, '_blank');
   closePaymentModal('payment-gateway-modal');
 
   const confirmModal = document.getElementById('payment-confirm-modal');
   if (confirmModal) {
-    const method = document.querySelector('input[name="payment-method"]:checked')?.value || 'nequi';
-    const methodLabel = method === 'nequi' ? 'Nequi' : (method === 'breb' ? 'Bre-B' : 'WhatsApp');
     const amount = cartState.hasConsultItems() ? 'por confirmar' : formatCurrency(cartState.getTotal());
-    document.getElementById('payment-method-receipt').textContent = methodLabel;
+    document.getElementById('payment-method-receipt').textContent = 'Instagram';
     document.getElementById('payment-amount-receipt').textContent = amount;
     confirmModal.classList.add('is-open');
     confirmModal.setAttribute('aria-hidden', 'false');
@@ -918,7 +902,7 @@ function initCart() {
   document.getElementById('cart-toggle')?.addEventListener('click', openCartSidebar);
   document.getElementById('floating-cart-toggle')?.addEventListener('click', openCartSidebar);
   document.getElementById('cart-close')?.addEventListener('click', closeCartSidebar);
-  document.getElementById('cart-confirm-btn')?.addEventListener('click', startWhatsappCheckout);
+  document.getElementById('cart-confirm-btn')?.addEventListener('click', startInstagramCheckout);
   document.getElementById('cart-continue-shopping-btn')?.addEventListener('click', closeCartSidebar);
   document.getElementById('checkout-modal-form')?.addEventListener('submit', submitCheckoutModal);
   document.getElementById('checkout-modal-close')?.addEventListener('click', closeCheckoutModal);
@@ -978,7 +962,7 @@ function renderChatOptions(options) {
   options.forEach(opt => {
     const btn = document.createElement('button');
     btn.className = 'chat-option';
-    if (opt.action === 'whatsapp') btn.classList.add('chat-option--whatsapp');
+    if (opt.action === 'instagram') btn.classList.add('chat-option--whatsapp');
     if (opt.action === 'catalogo' || opt.action === 'empezar-inspiracion') btn.classList.add('chat-option--accent');
     if (opt.action === 'no-resuelto') btn.classList.add('chat-option--cancel');
     btn.textContent = opt.label;
@@ -991,12 +975,13 @@ function renderChatOptions(options) {
 
 function handleChatAction(action, label) {
   switch (action) {
-    case 'whatsapp': {
+    case 'instagram': {
       const lastUserMsg = [...chatHistory].reverse().find(m => !m.isBot);
       const context = lastUserMsg ? lastUserMsg.text : 'Información general';
       const msg = `Hola.\n\nEl asistente de ZAYRO no resolvió mi duda.\n\nNecesito ayuda con: ${context}`;
-      window.open(`https://api.whatsapp.com/send/?phone=573016731498&text=${encodeURIComponent(msg)}`, '_blank');
-      addChatMessage('Te conectamos con un asesor por WhatsApp.', true);
+      window.open(INSTAGRAM_URL, '_blank');
+      console.info('Consulta por Instagram:', msg);
+      addChatMessage('Te conectamos con el equipo de ZAYRO por Instagram.', true);
       break;
     }
     case 'catalogo': {
@@ -1097,10 +1082,11 @@ function handleChatAction(action, label) {
         waBtn.className = 'chat-options';
         const btn = document.createElement('button');
         btn.className = 'chat-option chat-option--whatsapp';
-        btn.textContent = 'Hablar por WhatsApp';
+        btn.textContent = 'Hablar por Instagram';
         btn.addEventListener('click', () => {
           const msg = `Hola.\n\nEl asistente de ZAYRO no resolvió mi duda.\n\nNecesito ayuda con: ${context}`;
-          window.open(`https://api.whatsapp.com/send/?phone=573016731498&text=${encodeURIComponent(msg)}`, '_blank');
+          window.open(INSTAGRAM_URL, '_blank');
+          console.info('Consulta por Instagram:', msg);
         });
         waBtn.appendChild(btn);
         chatBody.appendChild(waBtn);
@@ -1145,9 +1131,8 @@ function handleUserFreeText(text) {
     envios: 'envios',
     envío: 'envios',
     envíos: 'envios',
-    pago: 'pagos',
-    pagos: 'pagos',
-    paga: 'pagos',
+    instagram: 'inspiracion',
+    contacto: 'inspiracion',
     inspir: 'inspiracion',
     frasco: 'inspiracion',
     envase: 'inspiracion',
@@ -1202,8 +1187,7 @@ function handleUserFreeText(text) {
     const helpOpts = renderChatOptions([
       { label: "Perfumes", next: "perfumes" },
       { label: "Envíos", next: "envios" },
-      { label: "Pagos", next: "pagos" },
-      { label: "Hablar con un asesor", action: "whatsapp" }
+      { label: "Consulta por Instagram", action: "instagram" }
     ]);
     chatBody.appendChild(helpOpts);
     chatBody.scrollTop = chatBody.scrollHeight;
@@ -1484,13 +1468,14 @@ function sendInspirationRequest() {
   const frascoNombre = FRASCOS[currentFrasco]?.nombre || 'un frasco';
   const mensaje = `Hola, quiero que me hagan una fragancia similar a ${descripcion}.
 Frasco: ${frascoNombre}.
-Tamaño: ${tamano || 'A confirmar por WhatsApp'}.
-Te envío la imagen directamente por WhatsApp cuando se abra el chat.`;
+Tamaño: ${tamano || 'A confirmar por Instagram'}.
+Te envío la imagen directamente por Instagram cuando se abra el chat.`;
 
-  addChatMessage('Perfecto, ya abrí el chat con el asesor. Te la hacemos y te aviso por WhatsApp.', true);
+  addChatMessage('Perfecto, te abrimos el contacto con el equipo de ZAYRO por Instagram.', true);
   document.getElementById('chat-panel')?.classList.add('is-open');
   closeInspirationModal();
-  window.open(`https://api.whatsapp.com/send/?phone=573016731498&text=${encodeURIComponent(mensaje)}`, '_blank');
+  window.open(INSTAGRAM_URL, '_blank');
+  console.info('Solicitud de inspiración:', mensaje);
 }
 
 function renderLandingFrascoHook() {
