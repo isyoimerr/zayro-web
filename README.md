@@ -42,18 +42,6 @@ Este proyecto presenta una estrategia de marca enfocada en conversión visual, p
 - `privacidad.html` — política de privacidad
 - `assets/` — imágenes y recursos del proyecto
 
-## 📸 Presentación visual
-
-<p align="center">
-  <img src="assets/coleccion-1/IMAGENES-INDIVIDUAL/MUJER-TOMA-1.png" alt="ZAYRO visual 1" width="420" />
-  <img src="assets/coleccion-1/IMAGENES-INDIVIDUAL/TOMA-1-HOMBRE.png" alt="ZAYRO visual 2" width="420" />
-</p>
-
-<p align="center">
-  <img src="assets/coleccion-1/IMAGENES-INDIVIDUAL/MUJER-TOMA-2-.png" alt="ZAYRO visual 3" width="420" />
-  <img src="assets/coleccion-1/IMAGENES-INDIVIDUAL/TOMA-2-HOMBRE.png" alt="ZAYRO visual 4" width="420" />
-</p>
-
 ## 🎯 Objetivos
 
 - Presentar la identidad visual de la marca.
