@@ -1,20 +1,29 @@
 # ZAYRO
 
+<p align="center">
+  <img src="assets/logo-sin-fondo/instagram.png" alt="ZAYRO" width="88" />
+</p>
+
+<p align="center">
+  <img alt="Instagram" src="https://img.shields.io/badge/Instagram-%40zayro_lifestyle-%23E1306C?logo=instagram&logoColor=white" />
+  <img alt="Landing page" src="https://img.shields.io/badge/Proyecto-Landing%20Page-%23111111" />
+</p>
+
 Sitio web promocional de la marca ZAYRO para presentación de perfumes, moda y accesorios con enfoque en Instagram como canal principal de atención.
 
 ## Objetivo
 
-- Presentar la identidad visual de la marca
-- Mostrar colecciones y productos
-- Mantener la atención comercial enfocada en Instagram
-- Evitar flujos de WhatsApp y pagos en la interfaz principal
+- Presentar la identidad visual de la marca.
+- Mostrar colecciones y productos.
+- Mantener la atención comercial enfocada en Instagram.
+- Evitar flujos de WhatsApp y pagos en la interfaz principal.
 
 ## Estructura
 
 - `index.html` — página principal
 - `styles.css` — estilos visuales del sitio
 - `script.js` — interacciones, catálogo y experiencia del usuario
-- `products.js` — datos de productos / referencias
+- `products.js` — datos de productos y referencias
 - `terminos.html` — términos generales
 - `privacidad.html` — política de privacidad
 - `assets/` — imágenes y recursos del negocio
