@@ -24,24 +24,6 @@ Landing page comercial para la marca ZAYRO, diseñada para presentar perfumes, m
 
 Este proyecto presenta una estrategia de marca enfocada en conversión visual, posicionamiento premium y atención directa a través de Instagram. La experiencia está pensada para ser clara, elegante y altamente usable desde móvil, con una narrativa visual que refuerza la identidad de ZAYRO.
 
-## ✨ Stack
-
-- HTML
-- CSS
-- JavaScript
-- Assets visuales propios de la marca
-- Despliegue en Vercel
-
-## 📁 Estructura principal
-
-- `index.html` — página principal
-- `styles.css` — estilos visuales y responsividad
-- `script.js` — interactividad, catálogo y flujo del sitio
-- `products.js` — datos de productos
-- `terminos.html` — términos
-- `privacidad.html` — política de privacidad
-- `assets/` — imágenes y recursos del proyecto
-
 ## 🎯 Objetivos
 
 - Presentar la identidad visual de la marca.
@@ -49,18 +31,6 @@ Este proyecto presenta una estrategia de marca enfocada en conversión visual, p
 - Mantener la atención comercial enfocada en Instagram.
 - Diseñar una experiencia premium y adaptable a móvil.
 - Crear una landing page clara, visualmente sólida y lista para exhibición comercial.
-
-## 🚀 Desarrollo local
-
-```bash
-python -m http.server 8000
-```
-
-Luego abre:
-
-```text
-http://localhost:8000
-```
 
 ## 🧾 Nota
 
